@@ -1,0 +1,595 @@
+@media screen and (max-width: 319px) {
+    html {
+    font-size: 85.33333px; } }
+    @media screen and (min-width: 320px) and (max-width: 359px) {
+    html {
+    font-size: 85.33333px; } }
+    @media screen and (min-width: 360px) and (max-width: 374px) {
+    html {
+    font-size: 96px; } }
+    @media screen and (min-width: 375px) and (max-width: 383px) {
+    html {
+    font-size: 100px; } }
+    @media screen and (min-width: 384px) and (max-width: 399px) {
+    html {
+    font-size: 102.4px; } }
+    @media screen and (min-width: 400px) and (max-width: 413px) {
+    html {
+    font-size: 106.66667px; } }
+    @media screen and (min-width: 414px) and (max-width: 767px) {
+    html {
+    font-size: 110.4px; } }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+    font-size: 160.4px; } }
+    @media screen and (min-width: 1024px){
+    html {
+    font-size: 210.4px; } }
+
+html,body,#big-box{
+    width:100%;
+    height:100%;
+}
+
+body.err{
+    background: url("../images/客服移动端切图/登录页/404界面.jpg") no-repeat center;
+    background-size: cover;
+}
+
+*,textarea{
+    padding: 0;
+    margin: 0;
+}
+
+#big-box{
+    padding-top: 0.44rem;
+    position: relative;
+}
+
+/* 防止页面闪动 */
+[v-cloak] {  
+    display: none;  
+}  
+
+.mint-tab-container-wrap{
+    height:100%;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  
+  .clearfix {
+    zoom: 1;
+  }
+
+  /* 登录页面样式 */
+ /* 媒体查询 */
+/* 图标样式 */
+@media only screen and (max-device-width: 413px) {
+    /*iPhone 6 Portrait*/
+    /* 登录页面 */
+    #login_from .mint-field .mint-cell-title > .mint-cell-text{
+      background: url("../../static/images/客服移动端切图/登录页/user.png") no-repeat center;
+    }
+
+    #login_from .mint-field:nth-child(2) .mint-cell-title > .mint-cell-text{
+        background: url("../../static/images/客服移动端切图/登录页/code.png") no-repeat center;
+    }
+      /* GIS小区详情 */
+      #GIS_community .mint-header-button.is-right {
+        background: url("../../static/images/客服移动端切图/GIS/位置 copy 2.png") no-repeat center right;
+      }
+
+      #GIS_repairman .mint-header-button.is-right {
+        background: url("../../static/images/客服移动端切图/GIS/巡检_轨迹 copy.png") no-repeat center right;
+      }
+      /* 图片删除按钮 */
+      .del_btn{
+        background: url("../../static/images/客服移动端切图/首页/close.png") no-repeat center right;
+      }
+      /* 超时图标 */
+        .timeout{
+            background: url("../../static/images/客服移动端切图/首页/超时.png") no-repeat bottom right;
+        }
+
+  }
+  
+  @media only screen and (min-device-width: 414px) {
+    /*iPhone 6+ Portrait*/
+    #login_from .mint-field .mint-cell-title > .mint-cell-text{
+        background: url("../../static/images/客服移动端切图/登录页/user@1.5x.png") no-repeat center;
+      }
+
+      #login_from .mint-field:nth-child(2) .mint-cell-title > .mint-cell-text{
+        background: url("../../static/images/客服移动端切图/登录页/code@1.5x.png") no-repeat center;
+      }
+
+       /* GIS小区详情 */
+       #GIS_community .mint-header-button.is-right {
+        background: url("../../static/images/客服移动端切图/GIS/位置 copy 2@1.5x.png") no-repeat center right; 
+      }
+
+      #GIS_repairman .mint-header-button.is-right {
+        background: url("../../static/images/客服移动端切图/GIS/巡检_轨迹 copy@1.5x.png") no-repeat center right; 
+      }
+
+      /* 图片删除按钮 */
+      .del_btn{
+        background: url("../../static/images/客服移动端切图/首页/close@1.5x.png") no-repeat center right;
+      }
+      /* 超时图标 */
+      .timeout{
+        background: url("../../static/images/客服移动端切图/首页/超时@1.5x.png") no-repeat bottom right;
+    }
+  }
+/* 登录页面 */
+  #login_from .mint-cell-wrapper{
+      height:0.6rem;
+      background-image: none;
+      border-bottom: 0.02rem solid #fff;
+      align-items:flex-end;
+  }
+  #login_from .mint-field .mint-cell-title .mint-cell-text,
+  #login_from .mint-field:nth-child(2) .mint-cell-title .mint-cell-text{
+    display: inline-block;
+    width: 0.4rem;
+    height:0.4rem;   
+    background-size: 0.2rem; 
+  }
+
+  #login_from .mint-field .mint-cell-title{
+      width:0.3rem;
+  }
+
+  #login_from .mint-field,
+  #login_from .mint-field .mint-cell-value input{
+    background-color: rgba(0, 0, 0, 0);
+    color:#fff;
+    font-size: 0.15rem;
+  }
+
+#login_from .mint-field .mint-cell-value input::-webkit-input-placeholder{ /*WebKit browsers*/    
+    color: #fff;
+    opacity: 0.6;
+}
+    
+#login_from .mint-field .mint-cell-value input::-moz-input-placeholder{ /*Mozilla Firefox*/
+    color: #fff;    
+    opacity: 0.6;
+}
+
+/* GIS详情 */
+#GIS_repairman .mint-header-button.is-right,
+#GIS_community .mint-header-button.is-right{
+    display: inline-block;
+    width:0.6rem;
+    height:0.44rem;
+    background-size: 0.17rem 0.18rem;
+  }
+
+  #GIS_community .mint-header-button.is-right{
+    background-size: 0.14rem 0.18rem;
+  }
+
+  #GIS_repairman .mint-header-button.is-right .mintui.mintui-more,
+  #GIS_community .mint-header-button.is-right .mintui.mintui-more{
+    opacity: 0;
+  }
+
+/*修改标题栏样式*/
+.mint-header{
+    height:0.44rem;
+    font-size: 0.18rem;
+    background-color: #49A9EA;
+}
+
+.mint-header-title{
+    font-size: 0.17rem;
+}
+
+.mintui{
+    font-size: 0.22rem;
+}
+/*navbar样式调整*/
+.mint-tab-item-label{
+    font-size: 0.11rem;
+}
+
+/* 去除高德地图logo */
+.amap-logo {
+    right: 0 !important;
+    left: auto !important;
+    display: none;
+}
+
+.amap-copyright {
+    right: 70px !important;
+    left: auto !important;
+}  
+
+.amap-copyright{
+    display: none !important;
+}
+
+/*调整input样式*/
+select, textarea,
+input[type='text'],
+input[type='search'],
+input[type='password'], 
+input[type='datetime'], 
+input[type='datetime-local'], 
+input[type='date'], 
+input[type='month'], 
+input[type='time'], 
+input[type='week'], 
+input[type='number'], 
+input[type='email'], 
+input[type='url'], 
+input[type='tel'], 
+input[type='color']{
+    margin-bottom: 0;
+    border:none;
+}
+
+/*下拉刷新图标*/
+.mint-spinner-snake{
+    margin: 0.2rem auto;
+}
+
+.mint-field .mint-cell-title,
+.mint-field .mint-cell-value{
+    width:0.7rem;
+    color:#333;
+}
+
+.hostBox .mint-cell .mint-cell-wrapper,
+.hostBox .mint-cell{
+    background-image: none;
+}
+
+.hostBox .mint-field .mint-cell-title{
+    width:0.6rem;
+    color:#fff;
+    font-size: 0.2rem;
+}
+
+.hostBox .mint-field-clear{
+    opacity: .2;
+    position: absolute;
+    right: 13px;
+    top:13px;
+}
+
+/* cell样式 */
+#info_body .mint-cell-wrapper,
+#setting_info .mint-cell-wrapper{
+    font-size: 0.14rem;
+    background-image: none;
+  }
+
+  #setting_info .mint-cell-wrapper{
+    padding: 0.17rem 0.05rem;
+  }
+
+  .mint-cell-wrapper{
+    font-size: 0.14rem;
+}
+
+
+.mint-cell-value{
+    color:#49A9EA;
+}
+
+  /* tabbar样式 */
+  .mint-tabbar{
+      height: 0.5rem;
+  }
+
+  .mint-tab-item-icon{
+      width: 0.2rem;
+      height:0.2rem;
+  }
+
+  .mint-button{
+      height: 0.5rem;
+      font-size: 0.18rem;
+  }
+
+  .mui-table-view-cell:after{
+      height:0.01rem;
+  }
+
+/* 默认按钮样式 */
+.mint-button--default{
+    background-color: #fff;
+}
+
+/* 下拉样式 */
+.mint-loadmore{
+    /* height:100%; */
+    overflow: initial;
+}
+
+/* 提示框样式 */
+.mint-msgbox{
+    width:2.15rem;
+}
+
+.mint-msgbox-header{
+    display: none;
+}
+
+.mint-msgbox-message,
+.mint-msgbox-content{
+    background-color: #49A9EA;
+    height:0.4rem;
+    padding: 0;
+    line-height: 0.4rem;
+    color:#fff;
+    font-size: 0.16rem;
+}
+.mint-msgbox-btns{
+    height:0.5rem;
+}
+
+.mint-msgbox-message{
+    color:#fff;
+}
+/* 下拉选项框样式 */
+.mint-popup-bottom{
+    width:100%;
+    text-align: center;
+}
+
+.popupTitle,
+.mint-popup-bottom .pickerTitle{
+    background-color:#49A9EA;
+    color:#fff;
+    height:0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.mint-popup-bottom .picker-item{
+    text-align: center;
+}
+
+ /* 上传图片样式 */
+.image-item img,
+.image-item{  
+    position: relative;
+    width:0.6rem !important;
+    height:0.6rem !important;
+    float: right;
+    margin-right: 0.05rem;
+}
+
+.del_btn{
+    position: absolute;
+    top: -0.1rem;
+    font-size: 0.2rem;
+    right: -0.03rem;
+    display: block;
+    width:0.2rem;
+    height:0.2rem;
+    background-size: 0.2rem;
+}
+
+/* popup中列表样式 */
+.mint-popup .mui-table-view-cell{
+    position: relative;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.mint-popup {
+    background: rgba(0, 0, 0, 0);
+}
+
+.mint-popup-bottom.mint-popup{
+    background: #fff;
+}
+
+/* popuptop样式 */
+.handleOpinion {
+    width:100%;
+    height: 100%;
+    background:#efeff4;
+}
+
+.handleOpinion .pickerTitle{
+    background-color:#49A9EA;
+    color:#fff;
+    height:0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+
+.centerPicker{
+    background-color: #fff;
+    width:2.5rem;
+}
+.centerPicker .pickerTitle{
+    background-color:#49A9EA;
+    color:#fff;
+    height:0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+
+/* 加载框样式 */
+.mint-spinner-double-bounce{
+    width:0.5rem !important;
+    height:0.5rem !important;
+}
+
+.spinner .v-modal{
+    background: #fff;
+    opacity: 0.7;
+}
+
+/* 版本控制样式 */
+#setting_info .versions .mint-cell-wrapper{
+    padding: 0.1rem 0.05rem;
+} 
+.versions .mint-cell-value{
+    background-color: #f44336;
+    color: #fff;
+    padding: 0.05rem 0.08rem 0.02rem;
+    border-radius: 0.07rem;
+  }
+
+
+/* 上拉刷新 */
+.more_loading{
+    list-style: none;
+    text-align: center;
+    margin: 0.2rem 0;
+    font-weight: 700;
+    color:#26a2ff;
+  }
+  .mint-spinner-fading-circle{
+    margin:0.2rem auto !important;
+    width:0.4rem !important;
+    height:0.4rem !important;
+  }
+
+/* 超时图标 */
+  .timeout{
+    display: inline-block;
+    width:0.14rem;
+    height:0.14rem;
+    background-size: 0.12rem;
+  }
+
+  /* 地址懒样式 */
+  /*.address{*/
+  /*  overflow: hidden;*/
+  /*  text-overflow:ellipsis;*/
+  /*  white-space: nowrap;*/
+  /*}*/
+
+  /* 图片预览效果 */
+.black .v-modal{
+    opacity: 1;
+  }
+
+  /*下拉刷新图标*/
+.mint-loadmore-bottom,
+.mint-loadmore-top {
+  color: #26a2ff;
+  font-size: 0.2rem;
+}
+
+/* confirm弹窗 */
+.mint-msgbox{
+    border-radius: 10px;
+}
+
+/* 输入框样式 */
+.mui-table-view-cell > .reply_result_default{
+    color:#9B9B9B !important
+  }
+  
+  .mui-table-view-cell > .reply_result_value{
+    overflow: hidden;
+    white-space:nowrap;  
+    text-overflow:ellipsis;
+  }
+
+  .mui-checkbox.mui-left input[type='checkbox'] {
+    left: 0.7rem;
+}
+.mui-radio, .mui-checkbox {
+    position: relative;
+    padding: 0 0.6rem;
+}
+
+.centerPicker .mui-input-row button label {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.1;
+     float: none; 
+     width: 35%; 
+    padding: 11px 15px;
+}
+
+  
+  .delay_time_val .mint-field-core{
+    text-align: right;
+    font-size: 16px;
+  }
+  
+
+  /* 兼容安卓低版本 */
+  .mint-popup{
+    -webkit-transform: translate3d(-50%, -50%, 0);
+  }
+
+  .mint-popup-bottom{
+    -webkit-transform: translate3d(-50%, 0, 0);
+  }
+
+  .mint-popup.opinion{
+    -webkit-transform: translate3d(-50%, -50%, 0);
+  }
+
+  .mint-toast.is-placemiddle{
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  .mint-msgbox{
+    -webkit-transform: translate3d(-50%, -50%, 0);
+  }
+
+.mint-checklist-title{
+  margin: 0;
+}
+.reply_content .mint-cell-wrapper{
+  padding: 0 0.15rem;
+  color:#666;
+  background-size: 120% 0.02rem;
+}
+.reply_content .mint-cell-wrapper .mint-cell-title{
+  width: 1.2rem;
+}
+.reply_content .mint-cell-wrapper .mint-cell-value input{
+  text-align: right;
+}
+
+.hideRoom > .mint-cell-wrapper{
+    background-color: #fff;
+}
+
+
+
+
+/*auditrecord*/
+a:link{text-decoration:none; color: #000;}
+a:visited {text-decoration:none; color: #000;}
+a:hover {text-decoration:none; color: #000;}
+a:active {text-decoration:none; color: #000;}
+
+/*mt-popup 样式*/
+.picker-item{
+    color: #fff !important;
+}
+.picker-item.picker-selected{
+    color: #155B8B !important;
+}
+
+.nametext{
+    padding-right: 20px;
+}
+.list_model{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
