@@ -19,13 +19,13 @@
 <!--                        <span class="Pname">客户名称：</span><span>{{item.planName}}</span>-->
 <!--                    </div>-->
                     <div class="address">
-                        <div class="addressleft">地址：</div>
+                        <div >地址：</div>
                         <div class="addressright">{{item.Address}}</div>
                     </div>
                     <div class="phone"><span class="texttitle">姓名：</span>{{item.Mobile}}</div>
                     <div class="model_bottom">
                         <div class="name"><span class="nametext"><span class="texttitle">黑名单性质：</span>{{item.IsOutTime}}</span></div>
-                        <div class="phone"><span class="texttitle">操作人：</span>{{item.WorkBillID}}</div>
+                        <div class="auditer"><span class="texttitle">操作人：</span>{{item.WorkBillID}}</div>
                     </div>
                 </li>
             </router-link>
@@ -107,78 +107,5 @@
     }
 </script>
 <style scoped>
-    .foo {
-        width: 50%;
-        background: #F9F9F9;
-    }
-    a{color: #565656;}
-    .searchselect{
-        height: 50px;
-        text-align: center;
-        padding:10px 40px;
-        background-color: #fff;
-    }
-    .searchdiv{
-        display: flex;
-        border:1px solid #979797;
-        border-radius: 30px;
-    }
-    .select{
-        padding:0px;
-        padding-left:10px;
-        width:33%;
-        text-align: center;
-        height: 30px;
-        border-radius: 30px;
-    }
-    .search{
-        width: 67%;
-        height: 30px;
-        text-align: center;
-        display: inline-block;
-        border-radius: 30px;
-        background:#fff!important;
-    }
-    .planlist{
-        margin-top: 10px;
-        font-size: 12px;
-    }
-    .audit_argument{
-        padding: 10px 15px;
-        display: flex;
-        flex-direction: column;
-        background-color:#fff;
-        margin-bottom: 10px;
-        font-size: 12px;
-        line-height:30px ;
-        color:#595959;
-    }
-    .model_bottom{
-        display: flex;
-        flex-direction: row;
-    }
-    .address {
-        display: flex;
-    }
-    .addressleft{
-        width:37px;
-    }
-    .addressright{
-        width:88%;
-        text-align: left;
-    }
-    .texttitle{
-        color: #333;
-    }
-    .phone{
-        display: inline-block;
-    }
-    .plan{
-        height: 41px;
-        line-height: 41px;
-        border-bottom: 1px solid #E0E0E0;
-    }
-    .nametext{
-        padding-right: 60px;
-    }
+
 </style>

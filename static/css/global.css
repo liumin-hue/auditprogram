@@ -593,3 +593,153 @@ a:active {text-decoration:none; color: #000;}
     align-items: center;
 }
 
+.foo {
+    width: 50%;
+    background: #F9F9F9;
+}
+a{color: #565656;}
+.searchselect{
+    height: 50px;
+    text-align: center;
+    padding:10px 40px;
+    background-color: #fff;
+}
+.searchdiv{
+    display: flex;
+    border:1px solid #979797;
+    border-radius: 30px;
+}
+.select{
+    padding:0px;
+    padding-left:10px;
+    width:33%;
+    text-align: center;
+    height: 30px;
+    border-radius: 30px;
+}
+.search{
+    width: 67%;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px;
+    background:#fff!important;
+}
+.planlist{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.audit_argument{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height:30px ;
+    color:#595959;
+}
+/*.model_bottom{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+.address {
+    display: flex;
+}
+.addressleft{
+    width:52px;
+}
+.addressright{
+    width:88%;
+    text-align: left;
+}
+.texttitle{
+    color: #333;
+}
+.phone{
+    display: inline-block;
+}
+.plan{
+    height: 41px;
+    line-height: 41px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.nametext{
+    padding-right: 60px;
+}
+
+summary {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+summary {
+    outline: none;
+}
+summary img {
+    width: 22px;
+    height: 19px;
+}
+/*去掉滑动条*/
+::-webkit-scrollbar{
+    display:none;
+}
+li{
+    list-style: none;
+}
+.xiaoxi {
+    margin-bottom: 0px;
+    list-style: none;
+    color: #eee;
+    font-size: 12px;
+}
+
+.hao1, .hao2, .hao3 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #C4E4FF;
+}
+
+.hao {
+    color: #155B8B;
+}
+
+.tongzhi {
+    text-align: center;
+    position: absolute;
+    top: 44px;
+    width: 90px;
+    right: 11px;
+    color: #eee;
+    background: #49A9EA;
+    font-size: 12px;
+    border-radius: 7px;
+}
+.bolt_argument {
+    padding: 0px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #595959;
+}
+.model_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.phone,.name {
+    width:50%;
+    display: inline-block;
+}
+.auditer{
+    display: inline-block;
+    padding-right: 30px;
+}

@@ -16,13 +16,13 @@
                         <div id="siderbar">
                             <ul class="mui-table-view mui-grid-view mui-grid-9">
                                 <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
-                                    <router-link to="/myWorkOrder">
+                                    <router-link to="/PendingAudit">
                                         <span class="mui-icon myWorkOrder_icon"></span>
                                         <div class="mui-media-body">我的工单</div>
                                     </router-link>
                                 </li>
                                 <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
-                                    <router-link to="/">
+                                    <router-link to="/PendingDeal">
                                         <span class="mui-icon repairTeam_icon"></span>
                                         <div class="mui-media-body">维修队工单</div>
                                     </router-link>

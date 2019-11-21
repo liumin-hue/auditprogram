@@ -5,7 +5,7 @@ import 'mint-ui/lib/style.css'
 import app from './app.vue'
 import $ from 'jquery'
 import Viewer from 'v-viewer'
-import 'viewerjs/dist/viewer.css'
+
 //引入我们自己的插件
 import MyPluginAddConfig from './myPlugin';
 //引入vue图片预览插件
@@ -20,6 +20,8 @@ import '../static/render/css/mui.css';
 
 //==============================================引入自己的css
 import '../static/css/global.css';
+
+import 'viewerjs/dist/viewer.css'
 
 import Login from './login/login.vue'//登录页
 import Home from './home/home.vue'//首页
@@ -49,8 +51,13 @@ import ChangeInfo from './setting/changeInfo.vue'//修改信息页面
 import ChangePassword from './setting/changePassword.vue'//修改密码页面
 import Versions from './setting/versions.vue'//版本升级页面
 import MyFollow from './myFollow/myfollow.vue'//我的关注页面
-import AuditRecord from './audit/AuditRecord.vue'//我的关注页面
-import Blacklist from './audit/Blacklist.vue'//我的关注页面
+
+//Audit项目
+import AuditRecord from './audit/AuditRecord.vue'//稽查记录
+import Blacklist from './audit/Blacklist.vue'//黑名单
+import PendingAudit from './audit/PendingAudit.vue'//待稽查
+import PendingDeal from './audit/PendingDeal.vue'//待处理
+
 
 //===============================================生命组件
 import ScrollTop from './component/scrollTop.vue'//添加返回顶部组件
@@ -108,6 +115,8 @@ var router = new VueRouter({
         { path: "/myFollow/myfollow", component: MyFollow, meta: { keepAlive: false } },
         { path: "/AuditRecord", component: AuditRecord },
         { path: "/Blacklist", component: Blacklist },
+        { path: "/PendingAudit", component: PendingAudit },
+        { path: "/PendingDeal", component: PendingDeal },
 
     ],
     scrollBehavior(to, from, savedPosition) {
@@ -127,6 +136,8 @@ var router = new VueRouter({
 //===================================Vuex管理=====================================>
 var store = new Vuex.Store({
     state: {
+        communityID:'',
+        inspectionID:'',
         UserInfo: {},//登陆用户信息
         Permisions: [],//用户权限
         assign: false,//工单分派权限
@@ -163,6 +174,7 @@ var store = new Vuex.Store({
         //判断工单详情页页面跳转来源
         isMyWorkOrder: "community",
         finishText:'',
+
     },
     getters: {
         changeState: state => {
